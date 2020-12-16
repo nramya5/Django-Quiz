@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for q in questions %}
+{{ q.id }}. {{ q.question }}
+ a. {{ q.choice1 }}
+
+ b. {{ q.choice2 }}
+
+ c. {{ q.choice3 }}
+
+ d. {{ q.choice4 }}
+
+{% endfor %}
+
+</body>
+</html>

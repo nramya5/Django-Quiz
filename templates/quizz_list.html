@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+{% for qz in data %}
+    quizz name : {{qz.quiz_no}} <br>
+    quizz count: {{qz.question_counts}}<br>
+{%endfor%}
+<body>
+<a href="{%url 'logout' %}" logout> logout</a>
+
+</body>
+</html>
